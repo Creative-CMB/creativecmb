@@ -1,0 +1,49 @@
+
+
+.card1{
+    width: 25rem;
+    height:30rem;
+  
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+
+.card-bodycard{
+    padding: 4rem 0!important;
+}
+
+.card-text{
+    font-size: 1rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container-fluid{
+    padding-top: 7rem;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.card-img-top{
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.card-img-top:hover{
+    transform: scale(1.8);
+}
+
+.imgsrc{
+    width: 50%;
+    height:50%;
+   
+}
+.center{
+    display: block;
+    margin-left: 80px;
+    margin-right: auto;
+    width: 50%;
+}
