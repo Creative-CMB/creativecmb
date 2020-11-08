@@ -1,13 +1,16 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import Masonry from "react-masonry-css";
+import "antd/dist/antd.css";
+import {Image} from "antd";
+
 //Scss
 import "./portfolio.scss";
 //Assets
 import Arrow from "../../assets/portfolio/arrow.svg";
 import Preview1 from "../../assets/portfolio/port3.png";
 import Preview2 from "../../assets/portfolio/port5.png";
-import Preview3 from "../../assets/portfolio/port6.png";
+import Preview3 from "../../assets/portfolio/port10.png";
 import Preview4 from "../../assets/portfolio/port4.png";
 import Preview5 from "../../assets/portfolio/port8.png";
 import Preview6 from "../../assets/portfolio/port2.png";
@@ -26,38 +29,39 @@ class Portfolio extends React.Component {
           id: "1",
           preview: Preview1,
           title: "Music",
-          tag: "Concert",
+          tag: "Events",
         },
         {
           id: "2",
           preview: Preview2,
-          title: "Wedding",
-          tag: "Decoration",
+          title: "Music",
+          tag: "Events",
         },
         {
           id: "3",
           preview: Preview3,
-          title: "Wedding",
-          tag: "Decoration",
+          title: "LED Signage",
+          tag: "Advertising",
         },
         {
           id: "4",
           preview: Preview4,
-          title: "Wedding",
-          tag: "Decoration",
+          title: "Decoration",
+          tag: "Wedding",
         },
         {
           id: "5",
           preview: Preview5,
-          title: "Wedding",
-          tag: "Decoration",
+          title: "Decoration",
+          tag: "Wedding",
         },
         {
           id: "6",
           preview: Preview6,
-          title: "Wedding",
-          tag: "Decoration",
+          title: "Music",
+          tag: "Events",
         },
+      
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
       filterResult: null,
@@ -145,7 +149,7 @@ class Portfolio extends React.Component {
     return (
       <div id="portfolio">
         <div className="wrapper">
-          <Title title="Our Portfolio" />
+          <Title title="Gallery" />
           <Row>
             <Col xs={12} sm={12} md={8} lg={9}>
               <div className="portfolio__nav">
@@ -154,19 +158,19 @@ class Portfolio extends React.Component {
                     ALL
                   </li>
                   <li
-                    className={this.state.pickedFilter === "Decoration" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("Decoration")}
+                    className={this.state.pickedFilter === "Events" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("Events")}
                   >
                     Events
                   </li>
                   <li
-                    className={this.state.pickedFilter === "illustrations" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("illustrations")}
+                    className={this.state.pickedFilter === "Advertising" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("Advertising")}
                   >
-                    ILLUSTRATIONS
+                    Advertising
                   </li>
-                  <li className={this.state.pickedFilter === "web" ? "portfolio__nav-active font12" : "font12"} onClick={() => this.filterGallery("web")}>
-                    WEB
+                  <li className={this.state.pickedFilter === "Wedding" ? "portfolio__nav-active font12" : "font12"} onClick={() => this.filterGallery("Wedding")}>
+                    Wedding
                   </li>
                 </ul>
               </div>

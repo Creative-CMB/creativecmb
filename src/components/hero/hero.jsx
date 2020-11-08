@@ -30,14 +30,14 @@ class Hero extends Component {
             <h1 className="weight800 font60">
               We Are CreativeCMB
             </h1>
-            <p className="font12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              doeiusmod tempor incididunt ut labore et dolore magna aliqua
+            <p className="">
+            What you need, is an Event, to remember for a lifetime
             </p>
             <Button label="SEND MESSAGE" target={"contact"} />
           </div>
         </Col>
         <Col md={12} lg={6}>
+
           <Carousel >
         <Carousel.Item interval={1000}>
     <img
@@ -46,8 +46,8 @@ class Hero extends Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+     
+      <p>Creativity & innovation is to events, what the heart & soul is to the living</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={1000}>
@@ -57,8 +57,8 @@ class Hero extends Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      
+      <p>Creating the Best. Day. Ever.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={1000}>
@@ -68,8 +68,8 @@ class Hero extends Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+     
+      <p>Every love story is beautiful, but yours should be unique!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={1000}>
@@ -79,15 +79,12 @@ class Hero extends Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <p>Exclusive Events, Priceless Memories!</p>
     </Carousel.Caption>
   </Carousel.Item>
   </Carousel>
   
-          <div>
-            
-          </div>
+          
         </Col>
       </Row>
     </div>

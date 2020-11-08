@@ -1,6 +1,6 @@
 import React from 'react';
 import "./cardstyle.css";
-import { Popover, Button } from 'antd';
+import { Popover, Button} from 'antd';
 import "antd/dist/antd.css";
 
 
@@ -24,7 +24,7 @@ const Card = props=>{
            
                 <img src={props.imgsrc} alt="Exhibition" />
             </div>
-            <div className="card-body text-dark">
+            <div className="card-body text-dark ">
                 <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary">
                     {props.para}

@@ -3,9 +3,12 @@ import { Row, Col } from "react-flexbox-grid";
 import "./contactSocial.scss";
 
 
+
+
 import FacebookIcon from "../../../assets/contact/facebook.svg";
 import TwitterIcons from "../../../assets/contact/twitter.svg";
 import DribbleIcon from "../../../assets/contact/dribble.svg";
+
 
 
 const contactSocial = () => (
@@ -13,14 +16,10 @@ const contactSocial = () => (
     <Col xs={12}>
       <Row center="xs">
         <Col xs={12} lg={1} className="contact__social">
-          <img src={FacebookIcon} alt="facebook" />
+         <a href={"https://www.facebook.com/CreativeCMB1"}><img src={FacebookIcon} alt="facebook" /></a>
         </Col>
-        <Col xs={12} lg={1} className="contact__social">
-          <img src={TwitterIcons} alt="Twitter" />
-        </Col>
-        <Col xs={12} lg={1} className="contact__social">
-          <img src={DribbleIcon} alt="Dribble" />
-        </Col>
+        
+       
       </Row>
     </Col>
   </Row>
