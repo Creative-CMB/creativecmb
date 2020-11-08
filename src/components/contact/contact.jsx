@@ -15,6 +15,7 @@ class Contact extends React.Component {
     this.state = {
       name: "",
       email: "",
+      phone:"",
       message: "",
       sending: false,
       successModal: false,
@@ -34,6 +35,7 @@ class Contact extends React.Component {
     var template_params = {
       name: this.state.name,
       email: this.state.email,
+      phone:this.state.phone,
       message: this.state.message,
     };
 
@@ -44,12 +46,12 @@ class Contact extends React.Component {
     let API_KEY = "user_ykhk2wvoHHy7AlOCxXhq1";
 
     // YOUR EMAIL.JS TEMPLATE ID
-    let TEMPLATE_ID = "template_a5a9chu";
+    let TEMPLATE_ID = "template_jh6looj";
 
 
 
 
-    emailjs.send("gmail", TEMPLATE_ID, template_params, API_KEY).then(
+    emailjs.send("Creative CMB", TEMPLATE_ID, template_params, API_KEY).then(
       function (response) {
         if (response.status === 200) {
           self.showSuccessModal();
@@ -75,7 +77,7 @@ class Contact extends React.Component {
   };
   // RESET CONTACT FORM
   resetForm() {
-    this.setState({ name: "", email: "", message: "" });
+    this.setState({ name: "", email: "",phone:"", message: "" });
   }
   // CLOSE ALL MODALS
   closeModal = () => {
@@ -83,7 +85,7 @@ class Contact extends React.Component {
   };
 
   resetForm = () => {
-    this.setState({ name: "", email: "", message: "" });
+    this.setState({ name: "", email: "",phone:"", message: "" });
   };
 
   render() {
@@ -115,7 +117,7 @@ class Contact extends React.Component {
         <div className="wrapper">
           <Title title="CONTACT US." />
           <p className="font12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br></br>ut labore et dolore magna aliqua.
+           For event bookings,advertising or renting equipments,<br></br> please contact us using the form below
           </p>
 
           <Row className="padding40">
@@ -124,6 +126,8 @@ class Contact extends React.Component {
                 <h4 className="font30 weight800 padding30">Send Us Message.</h4>
                 <input type="text" placeholder="Name" required name="name" value={this.state.name} onChange={this.inputHandler} />
                 <input type="email" placeholder="Email" required name="email" value={this.state.email} onChange={this.inputHandler} />
+                <input type="phone" placeholder="Phone No" required name="phone" value={this.state.phone} onChange={this.inputHandler} />
+
                 <textarea
                   rows="6"
                   cols="50"

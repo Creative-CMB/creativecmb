@@ -6,7 +6,7 @@ import TeamBox from './teamBox';
 import TeamInfo from "./teamInfo";
 import Title from "../ui-components/title/title";
 // Assets
-import Person01 from "../../assets/about/thili.jpeg";
+import Person01 from "../../assets/about/thilina1.jpg";
 import Person02 from "../../assets/about/naweed.png";
 
 const about = () => (
@@ -14,8 +14,7 @@ const about = () => (
     <div className="wrapper">
       <Title title="ABOUT US." />
       <p className="font12">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt<br></br>ut labore et dolore magna aliqua.
+        
       </p>
       <Row>
         <Col md={12} lg={4}>

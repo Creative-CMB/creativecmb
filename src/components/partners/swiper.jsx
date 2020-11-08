@@ -5,12 +5,12 @@ import 'swiper/swiper-bundle.css'
 // Components
 import PartnerBox from "./partnerBox";
 // Assets
-import Partner01 from "../../assets/partners/dfcclogo.png";
-import Partner02 from "../../assets/partners/dialogg.jpg";
-import Partner03 from "../../assets/partners/cinnamon.png";
-import Partner04 from "../../assets/partners/kings.png";
+import Partner01 from "../../assets/partners/pepsilogo.png";
+import Partner02 from "../../assets/partners/microsoftlogo.png";
+import Partner03 from "../../assets/partners/dhllogo.png";
+import Partner04 from "../../assets/partners/glaxo.png";
 import Partner05 from "../../assets/partners/hsbc.png";
-import Partner06 from "../../assets/partners/pearson.jpg";
+import Partner06 from "../../assets/partners/trigent.png";
 import { Popover, Button } from 'antd';
 
 

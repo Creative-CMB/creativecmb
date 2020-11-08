@@ -2,7 +2,7 @@
 
 .card1{
     width: 25rem;
-    height:30rem;
+    height:25rem;
   
 }
 
@@ -46,4 +46,5 @@
     margin-left: 80px;
     margin-right: auto;
     width: 50%;
+    margin-bottom: 30px;
 }
