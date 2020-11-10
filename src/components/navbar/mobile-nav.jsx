@@ -35,7 +35,7 @@ const mobileNav = (props) => (
             duration={500}
             onClick={props.closeMobileMenu}
           >
-            Portfolio
+            GALLERY
           </Link>
         </li>
         <li className="flex-center">
@@ -61,7 +61,7 @@ const mobileNav = (props) => (
             duration={500}
             onClick={props.closeMobileMenu}
           >
-            Projects
+            PORTFOLIO
           </Link>
         </li>
         <li className="flex-center">

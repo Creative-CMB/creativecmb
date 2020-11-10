@@ -37,7 +37,7 @@ class Hero extends Component {
           </div>
         </Col>
         <Col md={12} lg={6}>
-
+        <div className="hero-image">
           <Carousel >
         <Carousel.Item interval={1000}>
     <img
@@ -83,7 +83,7 @@ class Hero extends Component {
     </Carousel.Caption>
   </Carousel.Item>
   </Carousel>
-  
+  </div>
           
         </Col>
       </Row>

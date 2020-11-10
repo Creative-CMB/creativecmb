@@ -53,14 +53,14 @@ class Advertisement extends Component {
             <h4 className="font20 weight800">Our Services</h4>
             </div>
              <div className="container-fluid d-flex justify-content-center">
-                <div className="row">
+                <div className="card-deck">
                    
-                    <div className="col-md-4">
+                    <div className="col-md-4 ">
                         <Card imgsrc={event} title="Event planning" 
                         content={content}
                         />
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 ">
                         <Card imgsrc={ad} title="Advertising" 
                         content={content1}/>
                     </div>
