@@ -82,7 +82,7 @@ class App extends React.Component {
           userIsScrolled={this.state.userIsScrolled}
           mobileMenuOpen={this.mobileMenuOpen}
         />
-
+        <Snow/>
         <Hero />
         <Portfolio />
         <Services/>
