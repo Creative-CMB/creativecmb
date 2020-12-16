@@ -1,5 +1,7 @@
 import React from "react";
 import Swiper from "react-id-swiper";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // SCSS
 import "./blog.scss";
 import 'swiper/swiper-bundle.css'
@@ -60,7 +62,12 @@ class Blog extends React.Component {
       
     ],
   };
-
+  componentDidMount() {
+    AOS.init({
+      // initialise with other settings
+      duration : 3500
+    });
+  }
   render() {
     // BLOG STORIES RENDER
     let storiesRender = null;
@@ -102,10 +109,11 @@ class Blog extends React.Component {
     };
 
     return (
-      <div className="blog" id="blog">
+      <div data-aos="fade-up" className="blog" id="blog">
         <div className="wrapper">
-          <Title title="Our Portfolio" />
-          <p className="">
+        <h1 style={{color:"#fff"}} className="weight800 font60">Our Portfolio</h1>
+
+          <p style={{color:"#fff"}}  className="">
             Take a Look what we have done so far.<br></br>
           </p>
           <div className="padding30">

@@ -20,8 +20,11 @@ import About from "./components/about/about";
 
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
-import Services from "./components/Services/Services";
 import Blog from './components/blog/blog';
+import Service from './components/Slider/Slider';
+import Services from './components/Services/Services';
+import  Snow from './components/Snow/Snow';
+
  
 class App extends React.Component {
   state = {
@@ -71,7 +74,7 @@ class App extends React.Component {
 
     return (
    
-      <div className="App">
+      <div className="dark-mode">
       
         {mobileNavbar}
         {backdrop}
@@ -79,6 +82,7 @@ class App extends React.Component {
           userIsScrolled={this.state.userIsScrolled}
           mobileMenuOpen={this.mobileMenuOpen}
         />
+
         <Hero />
         <Portfolio />
         <Services/>
@@ -87,6 +91,9 @@ class App extends React.Component {
        <Blog/>
         <Contact />
         <Footer />
+       
+
+     
         
         
         

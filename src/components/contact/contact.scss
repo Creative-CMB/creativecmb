@@ -3,6 +3,7 @@
 
 #contact {
   padding: 60px 0;
+  
 }
 
 .small__button {
@@ -23,14 +24,15 @@
 }
 
 input {
-  background-color: $light-color;
+  background-color:#070A1F;
+  color: #fff;
   width: 100%;
   max-width: 570px;
   height: 45px;
   border: 0px;
   padding: 0 15px;
   font-size: 12px;
-  border: 2px solid $light-color;
+  /*border: 1px solid $black-color;*/
   outline: none;
   margin: 5px 0;
 }
@@ -39,19 +41,22 @@ input:active, input:focus {
 }
 
 ::placeholder {
-  color: $black-color;
+  color: $light-color;
   font-size: 12px;
+
 }
 
 
 textarea {
-  background-color: $light-color;
+  background-color: #070A1F;
+  color: #fff;
+
   width: 100%;
   max-width: 570px;
   border: 0px;
   padding: 15px;
   font-size: 12px;
-  border: 2px solid $light-color;
+  /*border: 2px solid $black-color;*/
   outline: none;
   margin: 5px 0;
 }
@@ -62,7 +67,7 @@ textarea:active, textarea:focus {
 
 
 ::placeholder {
-  color: $black-color;
+  color: $white-color;
   font-size: 12px;
 }
 

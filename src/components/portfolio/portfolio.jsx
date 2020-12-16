@@ -3,6 +3,8 @@ import { Row, Col } from "react-flexbox-grid";
 import Masonry from "react-masonry-css";
 import "antd/dist/antd.css";
 import {Image} from "antd";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 //Scss
 import "./portfolio.scss";
@@ -28,13 +30,13 @@ class Portfolio extends React.Component {
         {
           id: "1",
           preview: Preview1,
-          title: "Music",
-          tag: "Events",
+          title: "LED Signage",
+          tag: "Advertising",
         },
         {
           id: "2",
           preview: Preview2,
-          title: "Music",
+          title: "Prime Minister",
           tag: "Events",
         },
         {
@@ -58,8 +60,9 @@ class Portfolio extends React.Component {
         {
           id: "6",
           preview: Preview6,
-          title: "Music",
+          title: "One Galle Face",
           tag: "Events",
+          
         },
       
       ],
@@ -74,7 +77,13 @@ class Portfolio extends React.Component {
   // FIRST LOAD
   componentDidMount() {
     this.filterGallery("all");
+    AOS.init({
+      // initialise with other settings
+      duration:3000
+    });
   }
+
+
 
   //FILTER PORTFOLIO FUNCTION
   filterGallery = (target) => {
@@ -147,12 +156,13 @@ class Portfolio extends React.Component {
     }
 
     return (
-      <div id="portfolio">
-        <div className="wrapper">
-          <Title title="Gallery" />
+      <div  id="portfolio">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="wrapper">
+        <h1 style={{color:"#fff"}} className="weight800 font60">Gallery</h1>
+
           <Row>
             <Col xs={12} sm={12} md={8} lg={9}>
-              <div className="portfolio__nav">
+              <div  className="portfolio__nav">
                 <ul>
                   <li className={this.state.pickedFilter === "all" ? "portfolio__nav-active font12" : "font12"} onClick={() => this.filterGallery("all")}>
                     ALL
@@ -176,8 +186,8 @@ class Portfolio extends React.Component {
               </div>
             </Col>
             <Col xs={12} sm={12} md={4} lg={3}>
-              <div className="portfolio__filter" onMouseEnter={() => this.filterMenuHover(true)} onMouseLeave={() => this.filterMenuHover(false)}>
-                <p className="font12">{this.state.pickedFilterDropdown} FIRST</p>
+              <div  className="portfolio__filter" onMouseEnter={() => this.filterMenuHover(true)} onMouseLeave={() => this.filterMenuHover(false)}>
+                <p style={{color:"#fff"}} className="font12">{this.state.pickedFilterDropdown} FIRST</p>
                 <img src={Arrow} alt="arrow" />
                 {filterDroppDown}
               </div>

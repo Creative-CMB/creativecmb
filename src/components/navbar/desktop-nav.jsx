@@ -3,15 +3,16 @@ import { Link } from "react-scroll";
  // SCSS
 import './navbar.scss';
 // Assets
-import LogoImg from '../../assets/navbar/logo1.png';
-import MobileMenuIcon from '../../assets/navbar/mobile-menu.svg';
+import LogoImg from '../../assets/navbar/logo2.png';
+import MobileMenuIcon from '../../assets/navbar/mobile-menu.png';
 
 const desktopNav = (props) => (
   <nav className={`Navbar ${!props.userIsScrolled ? "extraLargeNavbar" : ""}`}>
+    
     <div className="wrapper flex-s-between">
       <div>
         <Link to="hero" spy={true} smooth={true} offset={0} duration={500}>
-          <img src={LogoImg} alt="logo" className="pointer" />
+          <img style={{opacity:"3"}} src={LogoImg} alt="logo" className="pointer" />
         </Link>
       </div>
       <div className="mobile__menu" onClick={props.mobileMenuOpen}>

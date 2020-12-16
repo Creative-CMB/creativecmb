@@ -1,7 +1,7 @@
 @import '../../style/App.scss';
 
 .team__box {
-  max-width: 370px;
+  width: auto;
   height: 420px;
   margin: 0 auto;
   margin-top: 60px;
@@ -18,7 +18,7 @@
     bottom: 0;
     left: 0;
     text-align: left;
-    width: 80%;
+    width: 100%;
     padding: 5px 20px;
 
     p {

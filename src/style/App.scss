@@ -12,6 +12,15 @@ ul[class],
 ol[class] {
   padding: 0;
 }
+.dark-mode{
+  background-color: #090D29;
+}
+
+.dark-mode nav{
+  background-color: #090D29;
+  color: aliceblue;
+  
+}
 
 /* Remove default margin */
 body,
@@ -38,6 +47,10 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  
+ 
+  
+
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

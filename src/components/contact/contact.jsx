@@ -6,8 +6,10 @@ import Title from "../ui-components/title/title";
 import ContactInfo from './contactInfo/contactInfo';
 import ContactSocial from './contactInfo/contactSocial';
 import Modal from '../contact-modal/Modal';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
-import ContactBackground from '../../assets/contact/contact.jpg';
+import ContactBackground from '../../assets/contact/contact.png';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -39,7 +41,7 @@ class Contact extends React.Component {
       message: this.state.message,
     };
 
-
+ 
 
 
     // YOUR EMAIL.JS API KEY IN FORMAT user_xxxxxxxxxxxxxxxxxx
@@ -70,6 +72,14 @@ class Contact extends React.Component {
     this.setState({ successModal: true, sending: false });
     this.resetForm();
   };
+
+  componentDidMount() {
+    AOS.init({
+      // initialise with other settings
+      duration : 3000
+    });
+  }
+
   // ERROR MODAL
   showErrorModal = () => {
     this.setState({ errorModal: true, sending: false });
@@ -114,16 +124,17 @@ class Contact extends React.Component {
     return (
       <div id="contact">
         {modalRender}
-        <div className="wrapper">
-          <Title title="CONTACT US." />
-          <p className="font12">
+        <div data-aos="fade-up" className="wrapper">
+        <h1 style={{color:"#fff"}} className="weight800 font60">Contact Us</h1>
+
+          <p style={{color:"#999"}} className="font12">
            For event bookings,advertising or renting equipments,<br></br> please contact us using the form below
           </p>
 
           <Row className="padding40">
             <Col md={12} lg={6}>
               <form id="contact-form" onSubmit={this.handleSubmit}>
-                <h4 className="font30 weight800 padding30">Send Us Message.</h4>
+                <h4 style={{color:"#3AA1FF"}} className="font30 weight800 padding30">Send Us Message.</h4>
                 <input type="text" placeholder="Name" required name="name" value={this.state.name} onChange={this.inputHandler} />
                 <input type="email" placeholder="Email" required name="email" value={this.state.email} onChange={this.inputHandler} />
                 <input type="phone" placeholder="Phone No" required name="phone" value={this.state.phone} onChange={this.inputHandler} />

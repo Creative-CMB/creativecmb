@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 import "./navbar.scss";
 // Assets
 import CloseIcons from '../../assets/navbar/mobile-close.svg';
-import Logo from "../../assets/navbar/logo.png";
+import Logo from "../../assets/navbar/logo2.png";
+
 
 const mobileNav = (props) => (
   <div className={`mobile__navbar ${props.isOpen ? "mobile__open" : ""}`}>

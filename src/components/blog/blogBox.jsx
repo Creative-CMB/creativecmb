@@ -11,9 +11,9 @@ const blog = (props) => (
         </div>
       </div>
       <div className="blog__info">
-        <h4 className="font15 weight800">{props.article.title}</h4>
-        <p className="font12 weight500 padding10">{props.article.description}</p>
-        <p className="font12 weight500">{props.article.date}</p>
+        <h4 style={{color:"#fff"}}  className="font15 weight800">{props.article.title}</h4>
+        <p style={{color:"#fff"}}  className="font12 weight500 padding10">{props.article.description}</p>
+        <p style={{color:"#fff"}}  className="font12 weight500">{props.article.date}</p>
       </div>
     </div>
   );

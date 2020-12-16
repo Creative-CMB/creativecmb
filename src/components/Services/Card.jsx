@@ -18,23 +18,24 @@ const Card = props=>{
    
 
     
-    return(
+    return(           
+
         <div className="card1 text-center shadow ">
+
             <div className="overflow" className="center">
            
                 <img src={props.imgsrc} alt="Exhibition" />
+                
             </div>
-            <div className="card-body text-dark ">
+
+            <div className="card-body text ">
                 <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary">
                     {props.para}
                 </p>
-                <Popover content={props.content}>
-
-                <Button>view Details</Button>
-                </Popover>
+               
             </div>
-        </div>    
+            </div>
     );
 }
 
