@@ -79,7 +79,7 @@ class Portfolio extends React.Component {
     this.filterGallery("all");
     AOS.init({
       // initialise with other settings
-      duration:3000
+      duration:1000
     });
   }
 
@@ -157,7 +157,7 @@ class Portfolio extends React.Component {
 
     return (
       <div  id="portfolio">
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="wrapper">
+        <div data-aos="fade-down" data-aos-anchor-placement="center-bottom" className="wrapper">
         <h1 style={{color:"#fff"}} className="weight800 font60">Gallery</h1>
 
           <Row>
